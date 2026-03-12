@@ -14,7 +14,7 @@ export const useAppStore = create(
 
             login: async (username, password) => {
                 try {
-                    const response = await axios.post("http://localhost:5400/api/v1/auth/login", {
+                    const response = await axios.post("microservice-gateway-production-a963.up.railway.app/api/v1/auth/login", {
                         username,
                         password
                     })

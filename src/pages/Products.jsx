@@ -13,7 +13,7 @@ const Products = () => {
     useEffect(() => {
         const fecthProducts = async () => {
             try {
-                const response = await axios.get("http://localhost:5400/api/v1/product/", {
+                const response = await axios.get("microservice-gateway-production-a963.up.railway.app/api/v1/product/", {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }

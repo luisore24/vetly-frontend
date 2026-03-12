@@ -14,7 +14,7 @@ const Services = () => {
 
         const fecthServices = async () => {
             try {
-                const response = await axios.get("http://localhost:5400/api/v1/service/", {
+                const response = await axios.get("microservice-gateway-production-a963.up.railway.app/api/v1/service/", {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
